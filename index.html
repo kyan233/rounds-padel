@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rounds: Americano padel, sorted</title>
+<meta name="description" content="Type in who turned up. Rounds builds every round, players tap in scores, and the leaderboard lives on every phone. Early access for UK organisers.">
+<meta name="theme-color" content="#0d1f18">
+<link rel="canonical" href="https://kyan233.github.io/rounds-padel/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Rounds">
+<meta property="og:title" content="Rounds: Americano padel, sorted">
+<meta property="og:description" content="Type in who turned up. Rounds builds every round, players tap in scores, and the leaderboard lives on every phone.">
+<meta property="og:image" content="https://kyan233.github.io/rounds-padel/assets/img/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:url" content="https://kyan233.github.io/rounds-padel/">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,62..125,100..900;1,62..125,100..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/site.css">
+<noscript><style>.reveal{opacity:1;transform:none}</style></noscript>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="#" aria-label="Rounds, home">Rounds<span>.</span></a>
+    <a class="btn btn-primary btn-small nav-cta" href="#early-access">Get early access</a>
+  </div>
+</header>
+
+<main id="main">
+
+  <section class="hero">
+    <div class="wrap">
+      <div>
+        <h1>Americano padel, <em>sorted.</em></h1>
+        <p>Type in who turned up. Rounds builds every round, players tap in scores, and the leaderboard lives on every phone.</p>
+        <div class="cta">
+          <a class="btn btn-primary" href="#early-access">Get early access</a>
+          <a class="btn btn-ghost" href="#builder">Try the round builder</a>
+        </div>
+      </div>
+
+      <div class="builder" id="builder">
+        <h2>Build tonight's rounds</h2>
+        <p class="hint">This works now. Names in, rounds out, scores add up.</p>
+        <form id="builder-form" novalidate>
+          <div class="field">
+            <label for="names">Players</label>
+            <textarea id="names" name="names" spellcheck="false">Priya, Tom, Aisha, Callum, Meg, Dev, Sophie, Jamal</textarea>
+            <span class="help">One per line or comma separated. At least 4.</span>
+            <span class="error">Add at least four players.</span>
+          </div>
+          <div class="builder-row">
+            <div class="field">
+              <label for="courts">Courts</label>
+              <select id="courts" name="courts">
+                <option value="1">1 court</option>
+                <option value="2" selected>2 courts</option>
+                <option value="3">3 courts</option>
+                <option value="4">4 courts</option>
+              </select>
+            </div>
+            <div class="field" style="align-self:end">
+              <button class="btn btn-primary" type="submit">Build rounds</button>
+            </div>
+          </div>
+        </form>
+
+        <div class="rounds" id="rounds" hidden>
+          <div class="round-head">
+            <strong id="round-label">Round 1</strong>
+            <div class="nav">
+              <button class="btn btn-ghost btn-small" type="button" id="prev">Back</button>
+              <button class="btn btn-ghost btn-small" type="button" id="next">Next round</button>
+            </div>
+          </div>
+          <div class="courts" id="courts-out"></div>
+          <p class="resting" id="resting"></p>
+          <div class="board">
+            <h3>Leaderboard</h3>
+            <ol id="board"></ol>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="photo" aria-label="A padel court">
+    <img src="assets/img/court.jpg" alt="Ten padel players lined up at the net after a session" width="1800" height="1200" loading="lazy">
+    <div class="wrap reveal">
+      <p>Built for the person who runs the Tuesday night Americano.</p>
+    </div>
+  </section>
+
+  <section class="steps">
+    <div class="wrap">
+      <h2 class="reveal">How a night runs</h2>
+      <div class="step reveal">
+        <div class="n">1</div>
+        <div>
+          <h3>Before the first ball</h3>
+          <p>Add names, pick courts. Rounds builds the whole night in a second. Late arrival? Add them, the rounds rebuild.</p>
+        </div>
+      </div>
+      <div class="step reveal">
+        <div class="n">2</div>
+        <div>
+          <h3>Between games</h3>
+          <p>Every player sees their next court and partner on their own phone. The winning pair taps in the score.</p>
+        </div>
+      </div>
+      <div class="step reveal">
+        <div class="n">3</div>
+        <div>
+          <h3>After the last round</h3>
+          <p>Leaderboard, winner, and a season table for the group. Next week is one tap: same players, new rounds.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="organisers">
+    <div class="wrap">
+      <div class="reveal">
+        <h2>Players never pay.</h2>
+        <p>The organiser does the work, so the organiser is the customer. Everyone else joins from a link in the group chat, no account, no download needed to see the rounds.</p>
+        <p>Rounds is being built now for iPhone. Early-access organisers shape what goes in first and run their first season free.</p>
+      </div>
+      <div class="price reveal">
+        <div class="amount">£6<small>a month</small></div>
+        <p>Planned price for organisers after launch.</p>
+        <p class="note">Early access: first season free.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="signup" id="early-access">
+    <div class="wrap">
+      <h2 class="reveal">Run your next Americano on Rounds.</h2>
+      <p class="lede reveal">Leave your email and I will send the TestFlight link the day it is ready.</p>
+      <form id="signup-form" class="reveal" action="https://formsubmit.co/kyansukhram@gmail.com" method="POST">
+        <input type="hidden" name="_subject" value="Rounds early access">
+        <input type="hidden" name="_next" value="https://kyan233.github.io/rounds-padel/?joined=1#early-access">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_template" value="table">
+        <input class="honey" type="text" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true">
+        <div class="two">
+          <div class="field">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" required autocomplete="email" placeholder="you@club.co.uk">
+          </div>
+          <div class="field">
+            <label for="club">Club or town</label>
+            <input id="club" name="club" type="text" autocomplete="organization" placeholder="Woking">
+          </div>
+        </div>
+        <div class="field">
+          <label>I am</label>
+          <div class="choice">
+            <label><input type="radio" name="role" value="organiser" checked> the one who runs it</label>
+            <label><input type="radio" name="role" value="player"> a player</label>
+            <label><input type="radio" name="role" value="club"> a club</label>
+          </div>
+        </div>
+        <div>
+          <button class="btn btn-primary" type="submit">Get early access</button>
+        </div>
+      </form>
+      <div class="thanks" id="thanks" hidden>
+        <h3>You are on the list.</h3>
+        <p>I will email you the TestFlight link the day it is ready. Reply to that email if you want to help shape it before then.</p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p>Rounds is being built in Woking by Kyan Sukhram.</p>
+    <p>Court photo: <a href="https://commons.wikimedia.org/wiki/File:Padel_Court_along_Ggaba_Road_5.jpg" rel="noopener">Wikimedia Commons</a>, CC0.</p>
+  </div>
+</footer>
+
+<script src="assets/js/app.js" defer></script>
+</body>
+</html>
